@@ -1,0 +1,155 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*css reset yahoo*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {font-size: 14px; margin:0; padding:0;font-family: "Microsoft YaHei"}
+fieldset,img { border:0;}
+address,caption,cite,code,dfn,th,var { font-style:normal; font-weight:normal;}
+ul { list-style:none;}
+a{text-decoration: none; cursor:pointer;}
+caption{ text-align:left;}
+h1,h2,h3,h4,h5,h6 { font-size:100%;	font-weight:normal;}
+q:before,q:after { content:'';}
+abbr,acronym { border:0;}
+input {outline: none;border: none}
+/** 清除浮动 **/
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+.clearfix{display:inline-block}
+* html .clearfix{height:0;}
+.clearfix{display:block}
+
+/*统一字体样式*/
+body,button,input,select,textarea { font-family: "microsoft yahei";}
+select, input, button, textarea{font-family: "microsoft yahei";}
+.root-inner{
+  width: 7.5rem;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+}
+.fl{float: left}
+.fr{float: right}
+
+/*组件基本样式*/
+//按钮
+.u-btn{
+  display: block;
+  width: 4.68rem;
+  height: 0.8rem;
+  border-radius: 5px;
+  margin: auto;
+  text-align: center;
+  line-height: 0.8rem;
+}
+//页面头部信息
+.m-menuInfoTitle{
+  width: 100%;
+  height: 0.8rem;
+  line-height: 0.8rem;
+  text-align: center;
+  background: linear-gradient(#d1efff,#b2e3ff);
+  margin-top: 1px;
+  font-size: 0.3rem;
+  color: #006dcb;
+  font-weight:700;
+  position: relative;
+}
+//页面公共头部
+.u-pageTitle{
+  width: 100%;
+  height: 1rem;
+  font-size: 0.42rem;
+  color: white;
+  text-align: center;
+  line-height:1rem ;
+  background: url("../images/loginBg.jpg") top center no-repeat;
+  background-size: cover;
+}
+//goback 按钮
+.u-gobackBtn{
+  width: 0.35rem;
+  height: 0.30rem;
+  display: inline-block;
+  background: url("../images/backIcon.png") top center no-repeat;
+  background-size:0.35rem 0.30rem;
+  position:absolute;
+  left: 0.27rem;
+  top: 0.25rem;
+}
+//底部菜单
+.m-nemu{
+  width: 100%;
+  height: 1.16rem;
+  border-top: 2px solid #bdbdbd;
+  position:fixed;
+  bottom: 0;
+  left: 0;
+  font-size: 0.18rem;
+  .m-menuItem{
+    margin-left: 1.17rem;
+    text-align: center;
+    color: #a09f9f;
+  }
+  .m-menuItem:first-child{
+    margin-left: 0;
+  }
+  .m-home{
+    height: 1.16rem;
+    display: inline-block;
+    width: 1.70rem;
+    .u-homeIcon{
+      display: block;
+      width: 0.52rem;
+      height: 0.49rem;
+      background: url("../images/homeIcon.png");
+      background-size:cover;
+      margin: auto;
+      margin-top: 0.16rem;
+    }
+  }
+  .m-search{
+    height: 1.16rem;
+    display: inline-block;
+    width: 1.75rem;
+    .u-searchIcon{
+      display: block;
+      width: 0.51rem;
+      height: 0.51rem;
+      background: url("../images/searchIcon.png");
+      background-size:cover;
+      margin: auto;
+      margin-top: 0.16rem;
+    }
+  }
+  .m-manager{
+    height: 1.16rem;
+    display: inline-block;
+    width: 1.70rem;
+    .u-managerIcon{
+      display: block;
+      width: 0.43rem;
+      height: 0.48rem;
+      background: url("../images/managerIcon.png");
+      background-size:cover;
+      margin: auto;
+      margin-top: 0.16rem;
+    }
+  }
+  .active{
+    color:#006dcb;
+    .u-homeIcon{
+      background: url("../images/home2Icon.png");
+      background-size:cover;
+    }
+    .u-searchIcon{
+      background: url("../images/search2Icon.png");
+      background-size:cover;
+    }
+    .u-managerIcon{
+      background: url("../images/manager2Icon.png");
+      background-size:cover;
+    }
+  }
+}
+

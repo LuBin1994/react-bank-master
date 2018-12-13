@@ -1,0 +1,401 @@
+/*
+ ********login********
+ */
+.g-Login{
+  width: 100%;
+  height: 100%;
+  position:absolute;
+  top: 0;
+  background: url("../images/loginBg.jpg") top center no-repeat;
+  background-size: cover;
+  .u-loginTitle{
+    width: 3.94rem;
+    margin: auto;
+    font-size:0.42rem;
+    color: #fff;
+    text-align: center;
+    margin-top: 32.3vh;
+  }
+  .m-loginGroup{
+    width: 5.4rem;
+    height: 3.4rem;
+    background: rgba(255,255,255,0.7);
+    margin: auto;
+    margin-top: 0.24rem;
+    border-radius: 5px;
+    padding-top: 0.42rem;
+    .m-loginItem{
+      width: 4.68rem;
+      height: 0.58rem;
+      background: #fff;
+      margin: auto;
+      margin-top: 0.32rem;
+      border-radius: 5px;
+      padding-top: 0.12rem;
+      .m-loginIcon{
+        width: 0.87rem;
+        height: 0.46rem;
+        border-right: 1px solid #cccccc;
+        .u-userIcon{
+          width:0.32rem;
+          height: 0.34rem;
+          background: url("../images/userIcon.png") top center no-repeat;
+          background-size: 0.32rem 0.34rem;
+          margin: auto;
+          position: relative;
+          top: 0.1rem;
+        }
+        .u-pwdIcon{
+          width:0.27rem;
+          height: 0.34rem;
+          background: url("../images/pwdIcon.png") top center no-repeat;
+          background-size: 0.27rem 0.34rem;
+          margin: auto;
+          position: relative;
+          top: 0.1rem;
+        }
+      }
+      .u-loginInput{
+        width: 3.4rem;
+        height: 0.58rem;
+        margin-left: 0.32rem;
+        font-size: 0.36rem;
+      }
+      color: #9b9b9b;
+    }
+    .m-loginItem:first-child{
+      margin-top:0 ;
+    }
+    .u-loginBtn{
+      background: #0f58d6;
+      color: white;
+      font-size: 0.42rem;
+      letter-spacing: 0.2rem;
+      margin-top: 0.4rem;
+    }
+  }
+}
+/*
+ ********管理员信息界面********
+ */
+.g-manager{
+  width: 100%;
+  height:100%;
+  background: white;
+  .u-icon{
+    width: 0.43rem;
+    height: 0.48rem;
+    line-height: 0.47rem;
+    background: url("../images/manager2Icon.png") top center no-repeat;
+    background-size:0.43rem 0.47rem;
+    display: inline-block;
+    margin-right: 0.18rem;
+    position: relative;
+    top: 0.08rem;
+  }
+  .m-managerInfo{
+    width: 7.36rem;
+    border: 1px solid #cccccc;
+    margin: auto;
+    margin-top: 0.33vh;
+    .m-title{
+      width:100%;
+      height: 0.48rem;
+      line-height: 0.48rem;
+      font-size: 0.2rem;
+      border-bottom:1px solid #cccccc ;
+      background: linear-gradient(#f8f8f8,#f0f0f0);
+      .u-blueline{
+        display: inline-block;
+        width:0.03rem;
+        height:0.18rem;
+        background: #006dcb;
+        position: relative;
+        margin:0 0.07rem 0 0.11rem;
+      }
+    }
+    .m-content{
+      width: 100%;
+      font-size: 0;
+      color: #616060;
+      padding-bottom: 1.03rem;
+      .m-contentItem{
+        width: 100%;
+        height: 0.28rem;
+        margin-top: 0.44rem;
+        .u-left{
+          display: inline-block;
+          width: 40%;
+          text-align: right;
+          font-size: 0.28rem;
+        }
+        .u-right{
+          display: inline-block;
+          width: 60%;
+          text-indent: 0.17rem;
+          font-size: 0.28rem;
+        }
+      }
+
+    }
+  }
+  .u-logoutBtn{
+    width: 3.84rem;
+    height: 1.1rem;
+    line-height: 1.1rem;
+    font-size: 0.4rem;
+    color: #fff;
+    background: #e82d2e;
+    margin: auto;
+    margin-top: 10.3vh;
+    .u-logoutIcon{
+      display: inline-block;
+      width: 0.35rem;
+      height: 0.37rem;
+      background: url("../images/logoutIcon.png") top center no-repeat;
+      background-size:0.35rem 0.37rem;
+      position: relative;
+      top: 0.05rem;
+      margin-right: 0.18rem;
+    }
+  }
+}
+/*
+ ********项目列表********
+ */
+.g-projectList{
+  .m-listCon{
+    width: 100%;
+    position: absolute;
+    top: 1.81rem;
+    bottom:1.18rem;
+    left: 0;
+    right:0;
+    overflow: hidden;
+    .m-title{
+      position: absolute;
+      left: 0.07rem;
+      top: 0.3vh;
+      z-index: 999;
+      width:7.36rem;
+      height: 0.48rem;
+      line-height: 0.48rem;
+      font-size: 0.2rem;
+      border-bottom:1px solid #cccccc ;
+      border-top:1px solid #cccccc ;
+      background: linear-gradient(#f8f8f8,#f0f0f0);
+      .u-blueline{
+        display: inline-block;
+        width:0.03rem;
+        height:0.18rem;
+        background: #006dcb;
+        position: relative;
+        margin:0 0.07rem 0 0.11rem;
+      }
+    }
+    .m-listConInner{
+      padding-top:0.48rem ;
+      margin-bottom: 0.05rem;
+      overflow: scroll;
+      width: 7.36rem;
+      border: 1px solid #cccccc;
+      margin: auto;
+      margin-top: 0.33vh;
+      position: absolute;
+      top: 0rem;
+      bottom:0rem;
+      left: 0;
+      right:0;
+      .m-content{
+        width: 6.84rem;
+        margin: auto;
+        .m-projectItem{
+          display: block;
+          width: 100%;
+          height: 0.48rem;
+          line-height: 0.48rem;
+          border-bottom: 2px dotted #989898;
+          font-size: 0.18rem;
+          .u-time{}
+        }
+      }
+    }
+
+  }
+}
+/*
+ ********项目内容********
+ */
+.g-projectCon{
+  .m-projectCon{
+    width: 100%;
+    position: absolute;
+    top: 1.81rem;
+    bottom:1.18rem;
+    left: 0;
+    right:0;
+    overflow: hidden;
+  }
+  .m-title{
+    position: absolute;
+    left: 0.07rem;
+    top: 0.3vh;
+    z-index: 999;
+    width:7.36rem;
+    height: 0.48rem;
+    line-height: 0.48rem;
+    font-size: 0.2rem;
+    border-bottom:1px solid #cccccc ;
+    border-top:1px solid #cccccc ;
+    background: linear-gradient(#f8f8f8,#f0f0f0);
+    .u-blueline{
+      display: inline-block;
+      width:0.03rem;
+      height:0.18rem;
+      background: #006dcb;
+      position: relative;
+      margin:0 0.07rem 0 0.11rem;
+    }
+  }
+  .m-projectConInner{
+    padding-top:0.48rem ;
+    margin-bottom: 0.05rem;
+    overflow: scroll;
+    width: 7.36rem;
+    border: 1px solid #cccccc;
+    margin: auto;
+    margin-top: 0.33vh;
+    position: absolute;
+    top: 0rem;
+    bottom:0rem;
+    left: 0;
+    right:0;
+    .u-title{
+      height: 0.76rem;
+      line-height: 0.76rem;
+      font-size:0.28rem;
+      color: #000;
+      text-align: center;
+    }
+    .m-item{
+      clear: both;
+      .u-itemName{
+        width: 33%;
+        font-size: 0.18rem;
+        line-height: 0.6rem;
+        font-weight: 700;
+        color: #000;
+        text-align: right;
+      }
+      .u-itemCon{
+        width: 63%;
+        font-size: 0.18rem;
+        line-height: 0.6rem;
+        color: #000;
+        text-align: left;
+      }
+    }
+
+  }
+
+}
+/*
+ ********项目查询********
+ */
+.g-project{
+  .u-icon{
+    display: inline-block;
+    width:0.44rem;
+    height: 0.44rem;
+    background: url("../images/search2Icon.png");
+    background-size: cover;
+    position: relative;
+    top: 0.12rem;
+    margin-right: 0.1rem;
+  }
+  .m-project{
+    width: 100%;
+    position: absolute;
+    top: 1.81rem;
+    bottom:1.18rem;
+    left: 0;
+    right:0;
+    overflow: hidden;
+    .m-projectNav{
+      height: 0.32rem;
+      line-height: 0.32rem;
+      color: #006dcb;
+      background: linear-gradient(#d1efff,#b2e3ff);
+      font-size: 0.14rem;
+      text-indent: 0.1rem;
+    }
+    .m-projectInner{
+      margin-bottom: 0.05rem;
+      overflow: scroll;
+      width: 100%;
+      border: 1px solid #cccccc;
+      margin: auto;
+      position: absolute;
+      top: 0.32rem;
+      bottom:0rem;
+      left: 0;
+      right:0;
+      .m-tableItemGroup{
+        height: 0.51rem;
+        width: 9.1rem;
+        background: #f5f5f5;
+        font-size: 0.14rem;
+        line-height: 0.51rem;
+        .u-item{
+          height: 0.51rem;
+          float: left;
+          border-right: 1px solid #d5d5d5;
+          text-align: center;
+        }
+        .u-item:last-child{
+          border-right: none;
+        }
+        .u-Id{
+          width:0.43rem;
+        }
+        .u-proNum{
+          width:1.20rem;
+        }
+        .u-proName{
+          width:2.30rem;
+        }
+        .u-person{
+          width:1.40rem;
+        }
+        .u-personTel{
+          width:1.40rem;
+        }
+        .u-proTime{
+          width:2.20rem;
+        }
+      }
+      .m-proGroup{
+        .m-tableItemGroup{
+          background: #fff;
+          height: 0.3rem;
+          line-height: 0.3rem;
+          width: 9.1rem;
+          font-size: 0.14rem;
+        }
+        .m-tableItemGroup:nth-child(2n){
+          background: #f5f5f5;
+        }
+        .u-item{
+          height:0.3rem;
+        }
+        .u-item:first-child{
+          background: #f5f5f5;
+        }
+
+      }
+    }
+  }
+}
+
+
+
